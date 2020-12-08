@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".week2.ViewsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="This is an orange TextView"
+            android:background="#FFA500"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:paddingTop="@dimen/views_first_row_padding"
+            android:paddingBottom="@dimen/views_first_row_padding"
+            android:paddingHorizontal="@dimen/views_first_row_padding_LR"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="This is a green TextView"
+            android:background="#008009"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:paddingTop="@dimen/views_first_row_padding"
+            android:paddingBottom="@dimen/views_first_row_padding"
+
+            android:gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="This is a blue TextView"
+            android:background="#0080EE"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:paddingTop="@dimen/views_first_row_padding"
+            android:paddingBottom="@dimen/views_first_row_padding"
+            android:paddingHorizontal="@dimen/views_first_row_padding_LR"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="This is a button"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/color"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:backgroundTint="#018742"
+                android:layout_height="match_parent"
+                android:text="This is a green button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/design_default_color_secondary_variant">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is an EditText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is another EditText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_input_fields"
+        android:paddingVertical="@dimen/views_first_row_padding"
+        android:weightSum="2">
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Notify me"
+            android:textSize="24sp"/>
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:text="Auto Backup"/>
+
+
+
+    </LinearLayout>
+
+    
+
+
+</LinearLayout>
